@@ -53,7 +53,9 @@ allmut_noCys: exclude introduction of Cysteine from the all mutation types
 
 -> SPINE_BsaI is modified to generate DMS library with type II site BsaI. And it has been troubleshooted to fix the problem of introducing extra BsaI site after DMS.
 
--> Fasta_converter.ipynb is used to convert fasta file to csv file. And it contains a function to deduplicate the oligos by identifying BsaI as token and extract oligo sequence translating it into amino acid. The final deduplicating will be run based on the repeat of amino acid sequence. The duplicate is caused by insertion and deletion. (e.g. amino acid: NDK. Inserting D at the second and third position are the same -- NDDK. For deletion, if there are continuous same amino acids, such as NDDK, deletion of the second or the third amino acid generates same result )
+-> Updated SPINE_BsaI contains a function to deduplicate the oligos by identifying BsaI as token and extract oligo sequence translating it into amino acid. The final deduplicating will be run based on the repeat of amino acid sequence. The duplicate is caused by insertion and deletion. (e.g. amino acid: NDK. Inserting D at the second and third position are the same -- NDDK. For deletion, if there are continuous same amino acids, such as NDDK, deletion of the second or the third amino acid generates same result ) After deduplicating, a csv file will be generated
+
+-> The updated SPINE_BsaI has been troubleshooted to solve the problems carried from the original script to identify and exclude extra introduction of type II site BsaI into oligo sequence.
 
 
 # Running Test
