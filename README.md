@@ -31,7 +31,7 @@ numpy
 Gene primers should be same for the same sequence, because no matter what the mutation types we introduced here the fragmentation strategy should always be the same based on the size of the GOI
 
 # Position arguments
-Gene start is defined as base number of first base in first codon and gene end is defined as base number of last base in last codon which should be the stop codon.
+Gene start is defined as base number of first base in first codon and gene end is defined as base number of second base in last codon which should be the stop codon.
 (Program will subtract 1 from gene start for python numbering)
 
 
