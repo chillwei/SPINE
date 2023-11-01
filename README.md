@@ -33,6 +33,7 @@ Gene primers should be same for the same sequence, because no matter what the mu
 # Position arguments
 - Gene start is defined as the position / base number of the first base in the '-1 amino acid' of the first amino acid we want to mutagenize.
   
+
 	e.g.  ATGACTGTACCGCAC
 
  	       M  T  V  P  H
