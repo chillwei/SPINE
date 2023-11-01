@@ -36,10 +36,10 @@ Gene primers should be same for the same sequence, because no matter what the mu
  	protein sequence : M  T  V  P  H <br />
         If the DMS starts from amino acid V, the start position should be base number of A in codon ACT (amino acid T)
   
-- Gene end is defined as base number of the second base in the '+1 codon' of the last codon we want to mutagenize. <br />
+- Gene end is defined as base number of the last base in the '+1 codon' of the last codon we want to mutagenize. <br />
   	e.g.  ATGACTGTACCGCAC <br />
  	protein sequence : M  T  V  P  H <br />
-	If the DMS ends at amino acid P, the end position should be the base number of A in codon CAC (amino acid H)
+	If the DMS ends at amino acid P, the end position should be the base number of C in codon CAC (amino acid H)
 (Program will subtract 1 from gene start for python numbering)
 
 
