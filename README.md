@@ -32,20 +32,13 @@ Gene primers should be same for the same sequence, because no matter what the mu
 
 # Position arguments
 - Gene start is defined as the position / base number of the first base in the '-1 amino acid' of the first amino acid we want to mutagenize.
-  
-
-	e.g.  ATGACTGTACCGCAC
-
+  	e.g.  ATGACTGTACCGCAC
  	       M  T  V  P  H
-  
 	      If the DMS starts from amino acid V, the start position should be base number of A in codon ACT (amino acid T)
   
 - Gene end is defined as base number of the second base in the '+1 codon' of the last codon we want to mutagenize.
-  
-	e.g.  ATGACTGTACCGCAC
-
-	       M  T  V  P  H
-  
+- 	e.g.  ATGACTGTACCGCAC
+-              M  T  V  P  H
 	      If the DMS ends at amino acid P, the end position should be the base number of A in codon CAC (amino acid H)
 (Program will subtract 1 from gene start for python numbering)
 
